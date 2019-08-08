@@ -7,9 +7,8 @@ from flask import session
 from flask_sqlalchemy import SQLAlchemy
 
 #之前好多flask插件都存放在ext模块下
-#from flask.ext.session import Session
 #后来独立出来，我们以flask_session为例
-from flask_session import Session
+#from flask_session import Session
 
 pymysql.install_as_MySQLdb()
 

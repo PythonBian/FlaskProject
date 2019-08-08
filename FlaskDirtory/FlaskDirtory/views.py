@@ -10,8 +10,21 @@ from flask import render_template
 from FlaskDirtory.main import app
 from FlaskDirtory.models import *
 from FlaskDirtory.main import session
+from FlaskDirtory.config import BaseConfig
+
+def loginValid(fun):
+    def inner(*args,**kwargs):
+        username = request.cookies.get("username")
+        id = request.cookies.get("user_id")
+        session_username = session.get("username")
+        if username and id and session_username:
+            if username == session_username:
+                return fun(*args,**kwargs)
+        return redirect("/login/")
+    return inner
 
 def setPassword(password):
+    #password += BaseConfig.SECRET_KEY
     md5 = hashlib.md5()
     md5.update(password.encode())
     return md5.hexdigest()
@@ -55,9 +68,8 @@ def login():
                 return response
     return render_template("login.html", **locals())
 
-
-
 @app.route("/index/",methods=["GET","POST"])
+@loginValid
 def index():
     students = Students.query.all()
     response = render_template("students_list.html", **locals())
@@ -66,9 +78,10 @@ def index():
 
 @app.route("/logout/",methods=["GET","POST"])
 def logout():
-    students = Students.query.all()
-    response = render_template("students_list.html", **locals())
-    #response.set_cookie("")
+    response = redirect("/login/")
+    for key in request.cookies:
+        response.delete_cookie(key)
+    del session["username"]
     return response
 
 

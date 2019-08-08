@@ -4,7 +4,7 @@ BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 class BaseConfig(object):
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
     SQLALCHEMY_TRACK_MODIFICATIONS = True
-    SECRET_KEY = "bjh123"
+    SECRET_KEY = "bjh123" #用来生成session_id和之后csrf_token
 
 
 class DebugConfig(BaseConfig):
