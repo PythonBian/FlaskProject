@@ -8,6 +8,7 @@ from flask import redirect
 from flask import render_template
 
 from FlaskDirtory.main import app
+from FlaskDirtory.main import csrf
 from FlaskDirtory.models import *
 from FlaskDirtory.main import session
 from FlaskDirtory.forms import TeacherForm
@@ -92,7 +93,30 @@ def student_list():
     #response.set_cookie("")
     return response
 
+#@csrf.exempt
 @app.route("/add_teacher/",methods=["GET","POST"])
 def add_teacher():
     teacher_form = TeacherForm()
+    if request.method == "POST":
+        name = request.form.get("name")
+        age = request.form.get("age")
+        gender = request.form.get("gender")
+        course = request.form.get("course")
+
+        t = Teachers()
+        t.name = name
+        t.age = age
+        t.gender = gender
+        t.course_id = int(course)
+        t.save()
     return render_template("add_teacher.html",**locals())
+
+@csrf.error_handler
+@app.route("/csrf_403/")
+def csrf_token_error(reason):
+    print(reason) #错误信息 #The CSRF token is missing.
+    return render_template("csrf_403.html",**locals())
+
+
+#csrf.exempt 单视图函数避免csrf校验
+#csrf.error_headler 重新定义403错误页

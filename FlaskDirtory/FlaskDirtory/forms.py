@@ -1,8 +1,11 @@
 import wtforms #定义字段
-from flask_wtf import Form #定义表单
+from flask_wtf import FlaskForm #定义表单 由于版本原因，将FORM改为FlaskForm
 from wtforms import validators  #定义校验
+from FlaskDirtory.models import Course
 
-class TeacherForm(Form):
+course_list = [(c.id,c.label) for c in Course.query.all()]
+
+class TeacherForm(FlaskForm):
     """
     form字段的参数
     label=None, 表单的标签
@@ -33,25 +36,20 @@ class TeacherForm(Form):
                                    validators.DataRequired("年龄不可以为空")
                                ]
     )
-    gender = wtforms.StringField("教师性别",
-                                render_kw = {
-                                    "class": "form-control",
-                                    "placeholder": "教师年龄"
-                                },
-                                validators=[
-                                     validators.DataRequired("性别不可以为空")
-                                ]
+    gender = wtforms.SelectField(
+        "性别",
+        choices=[
+            ("1", "男"),
+            ("2", "女")
+        ],
+        render_kw={
+            "class": "form-control",
+        }
     )
 
     course = wtforms.SelectField(
         "学科",
-        choices=[
-            ("1", "PYTHON"),
-            ("2", "PHP"),
-            ("3", "JAVA"),
-            ("4", "UI"),
-            ("5", "WEB"),
-        ],
+        choices = course_list,
         render_kw={
             "class": "form-control",
         }

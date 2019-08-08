@@ -5,7 +5,8 @@
 {% endblock %}
 
 {% block container %}
-    <form>
+    <form method="post">
+        {{ teacher_form.csrf_token }}
         <div>
             {{ teacher_form.name }}
             <br>

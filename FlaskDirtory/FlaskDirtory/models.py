@@ -99,3 +99,4 @@ class Teachers(BaseModel):
     age = models.Column(models.Integer)
     gender = models.Column(models.Integer,default = 3)  # 0 男 1女 -1 unknown
     course_id = models.Column(models.Integer, models.ForeignKey("course.id")) #教师多对一 映射表是课程
+
