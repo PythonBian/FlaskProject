@@ -119,22 +119,45 @@ def csrf_token_error(reason):
     return render_template("csrf_403.html",**locals())
 
 
-@app.route("/userValid/")
+@app.route("/userValid/",methods=["GET","POST"])
 def UserValid():
     result = {
         "code":"",
         "data":""
     }
-    data = request.args.get("username")
-    if data:
-        user = User.query.filter_by(username = data).first()
-        if user:
-            result["code"] = 400
-            result["data"] = "用户名已经存在"
-        else:
-            result["code"] = 200
-            result["data"] = "用户名未被注册，可以使用"
+    if request.method == "POST":
+        data = request.form.get("username")
+        if data:
+            user = User.query.filter_by(username = data).first()
+            if user:
+                result["code"] = 400
+                result["data"] = "用户名已经存在"
+            else:
+                result["code"] = 200
+                result["data"] = "用户名未被注册，可以使用"
+    else:
+        result["code"] = 400
+        result["data"] = "请求方式错误"
     return jsonify(result)
+
+
+
+# @app.route("/userValid/")
+# def UserValid():
+#     result = {
+#         "code":"",
+#         "data":""
+#     }
+#     data = request.args.get("username")
+#     if data:
+#         user = User.query.filter_by(username = data).first()
+#         if user:
+#             result["code"] = 400
+#             result["data"] = "用户名已经存在"
+#         else:
+#             result["code"] = 200
+#             result["data"] = "用户名未被注册，可以使用"
+#     return jsonify(result)
 
 
 #csrf.exempt 单视图函数避免csrf校验
