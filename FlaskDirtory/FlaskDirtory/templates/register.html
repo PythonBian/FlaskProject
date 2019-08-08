@@ -46,10 +46,13 @@
                       <option class="dropdown-item" value="0">学员</option>
                   </select>
                 </div>
-                <input class="btn btn-primary btn-block" type="submit" value="注册">
+                <input id="submit" class="btn btn-primary btn-block" type="submit" value="注册">
                 <br>
               </form>
                 <br>
+                <p style="color: red;" id="errorMessage">
+
+                </p>
               <div class="text-center">
                 <a class="small" href="/login/">已经拥有账号，登陆</a>
               </div>
@@ -69,7 +72,33 @@
 
   <!-- Custom scripts for all pages-->
   <script src="/static/js/sb-admin-2.min.js"></script>
-
+  <script>
+        $("#username").blur(
+            function () {
+                var value = $("#username").val();
+                var url = "/userValid/?username="+value
+                $.ajax(
+                    {
+                        url: url,
+                        type: "get",
+                        data: "",
+                        success: function (data) {
+                            if(data.code == 400){
+                                $("#submit").attr("disabled",true)
+                            }else{
+                                $("#submit").attr("disabled",false)
+                            }
+                            $("#errorMessage").text(data.data);
+                            console.log(data)
+                        },
+                        error: function (error) {
+                            console.log(error)
+                        }
+                    }
+                )
+            }
+        )
+  </script>
 </body>
 
 </html>

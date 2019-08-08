@@ -3,17 +3,16 @@
 """
 from FlaskDirtory.main import models
 
-db = models.session()
-
 
 class BaseModel(models.Model):
     __abstract__ = True #抽象表为True，代表当前类为抽象类，不会被创建
     id = models.Column(models.Integer, primary_key=True, autoincrement=True)
-
     def save(self):
+        db = models.session()
         db.add(self)
         db.commit()
     def delete_obj(self):
+        db = models.session()
         db.delete(self)
         db.commit()
 

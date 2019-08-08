@@ -4,6 +4,7 @@
 import hashlib
 
 from flask import request
+from flask import jsonify
 from flask import redirect
 from flask import render_template
 
@@ -116,6 +117,24 @@ def add_teacher():
 def csrf_token_error(reason):
     print(reason) #错误信息 #The CSRF token is missing.
     return render_template("csrf_403.html",**locals())
+
+
+@app.route("/userValid/")
+def UserValid():
+    result = {
+        "code":"",
+        "data":""
+    }
+    data = request.args.get("username")
+    if data:
+        user = User.query.filter_by(username = data).first()
+        if user:
+            result["code"] = 400
+            result["data"] = "用户名已经存在"
+        else:
+            result["code"] = 200
+            result["data"] = "用户名未被注册，可以使用"
+    return jsonify(result)
 
 
 #csrf.exempt 单视图函数避免csrf校验
