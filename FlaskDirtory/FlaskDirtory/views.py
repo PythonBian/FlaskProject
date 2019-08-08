@@ -10,7 +10,7 @@ from flask import render_template
 from FlaskDirtory.main import app
 from FlaskDirtory.models import *
 from FlaskDirtory.main import session
-from FlaskDirtory.config import BaseConfig
+from FlaskDirtory.forms import TeacherForm
 
 def loginValid(fun):
     def inner(*args,**kwargs):
@@ -92,3 +92,7 @@ def student_list():
     #response.set_cookie("")
     return response
 
+@app.route("/add_teacher/",methods=["GET","POST"])
+def add_teacher():
+    teacher_form = TeacherForm()
+    return render_template("add_teacher.html",**locals())
