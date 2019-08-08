@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01c84558-1b0a-4719-b560-fe10847f76e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskDirtory/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskDirtory/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskDirtory/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskDirtory/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskDirtory/templates/blank.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskDirtory/templates/blank.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskDirtory/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskDirtory/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskDirtory/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskDirtory/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FlaskDirtory/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="120">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -62,20 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://D:/Anaconda3/envs/FlaskPath/Lib/site-packages/flask/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-643">
-              <caret line="2424" column="39" selection-start-line="2424" selection-start-column="29" selection-end-line="2424" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FlaskDirtory/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            <state relative-caret-position="220">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#16#54#0" expanded="true" />
               </folding>
@@ -95,11 +81,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FlaskDirtory/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1782">
-              <caret line="81" column="30" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="30" />
-              <folding>
-                <element signature="e#16#30#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="176">
+              <caret line="11" column="37" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FlaskDirtory/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-242">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -157,7 +149,6 @@
         <option value="$PROJECT_DIR$/../../importProject/dirs/__init__.py" />
         <option value="$PROJECT_DIR$/FlaskDirtory/templates/students_list.html" />
         <option value="$PROJECT_DIR$/FlaskDirtory/templates/index.html" />
-        <option value="$PROJECT_DIR$/FlaskDirtory/models.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/FlaskDirtory/templates/login.html" />
         <option value="$PROJECT_DIR$/FlaskDirtory/templates/register.html" />
@@ -165,6 +156,7 @@
         <option value="$PROJECT_DIR$/FlaskDirtory/config.py" />
         <option value="$PROJECT_DIR$/FlaskDirtory/templates/blank.html" />
         <option value="$PROJECT_DIR$/FlaskDirtory/views.py" />
+        <option value="$PROJECT_DIR$/FlaskDirtory/models.py" />
       </list>
     </option>
   </component>
@@ -364,23 +356,23 @@
       <workItem from="1565149649874" duration="501000" />
       <workItem from="1565156271146" duration="12183000" />
       <workItem from="1565180824881" duration="2324000" />
-      <workItem from="1565224124737" duration="4816000" />
+      <workItem from="1565224124737" duration="5571000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21691000" />
+    <option name="totallyTimeSpent" value="22446000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49748743" visible="true" weight="0.2647504" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49748743" visible="true" weight="0.2647504" />
       <window_info id="Structure" order="1" sideWeight="0.5025126" side_tool="true" weight="0.26096824" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2782324" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2782324" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -428,7 +420,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FlaskDirtory$FlaskDirtory.coverage" NAME="FlaskDirtory Coverage Results" MODIFIED="1565149230055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/FlaskDirtory$c.coverage" NAME="c Coverage Results" MODIFIED="1565158984498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../importProject" />
-    <SUITE FILE_PATH="coverage/FlaskDirtory$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1565227466967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDirtory" />
+    <SUITE FILE_PATH="coverage/FlaskDirtory$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1565230289092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDirtory" />
     <SUITE FILE_PATH="coverage/FlaskDirtory$b.coverage" NAME="b Coverage Results" MODIFIED="1565158911105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../importProject/dirs" />
     <SUITE FILE_PATH="coverage/FlaskDirtory$a.coverage" NAME="a Coverage Results" MODIFIED="1565158592894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../importProject/dirs" />
     <SUITE FILE_PATH="coverage/FlaskDirtory$manage.coverage" NAME="manage Coverage Results" MODIFIED="1565149610058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -500,13 +492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FlaskDirtory/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Anaconda3/envs/FlaskPath/Lib/site-packages/flask/templating.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -518,16 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FlaskDirtory/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-          <folding>
-            <element signature="e#16#54#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -545,30 +520,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FlaskDirtory/views.py">
+    <entry file="file://D:/Anaconda3/envs/FlaskPath/Lib/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
-          <caret line="81" column="30" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="30" />
+        <state relative-caret-position="193">
+          <caret line="2462" column="25" selection-start-line="2462" selection-start-column="25" selection-end-line="2462" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlaskDirtory/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
-            <element signature="e#16#30#0" expanded="true" />
+            <element signature="e#16#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FlaskDirtory/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="120">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Anaconda3/envs/FlaskPath/Lib/site-packages/flask/app.py">
+    <entry file="file://$PROJECT_DIR$/FlaskDirtory/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-643">
-          <caret line="2424" column="39" selection-start-line="2424" selection-start-column="29" selection-end-line="2424" selection-end-column="39" />
+        <state relative-caret-position="176">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlaskDirtory/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-242">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
