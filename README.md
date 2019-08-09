@@ -1,2 +1,6 @@
 # FlaskProject
 flask 教学联系项目
+FlaskDirtory 没有经过flask_blueprint的项目
+FlaskProjectDirtory 蓝图整理后的项目
+flask_blueprint_example 蓝图教学项目
+
