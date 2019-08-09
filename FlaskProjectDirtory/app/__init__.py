@@ -22,6 +22,6 @@ def create_app(config_name):
     from .main import main as main_blueprint
     from .ApiResource import api_main
     app.register_blueprint(main_blueprint)
-    app.register_blueprint(api_main)
+    app.register_blueprint(api_main,url_prefix = "/api")
 
     return app

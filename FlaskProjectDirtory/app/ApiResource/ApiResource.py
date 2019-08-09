@@ -1,4 +1,5 @@
-from app.main import api
+
+from app.ApiResource import api #导入错误
 from flask_restful import Resource
 from app.models import *
 
@@ -10,7 +11,7 @@ result = {
     ]
 }
 
-@api.resource("/API/user/")
+@api.resource("/user/")
 class Hello(Resource):
     def get(self):
         values = User.query.all()
