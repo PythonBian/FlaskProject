@@ -88,8 +88,8 @@ def logout():
     return response
 
 
-@main.route("/student_list/",methods=["GET","POST"])
-def student_list():
+@main.route("/student_list/<int:id>/",methods=["GET","POST"])
+def student_list(id):
     students = Students.query.all()
     response = render_template("students_list.html", **locals())
     #response.set_cookie("")

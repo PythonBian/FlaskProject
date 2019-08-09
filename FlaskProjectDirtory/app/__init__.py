@@ -20,6 +20,8 @@ def create_app(config_name):
 
     #注册蓝图
     from .main import main as main_blueprint
+    from .ApiResource import api_main
     app.register_blueprint(main_blueprint)
+    app.register_blueprint(api_main)
 
     return app
