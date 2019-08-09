@@ -94,7 +94,7 @@ def student_list():
     #response.set_cookie("")
     return response
 
-#@csrf.exempt
+@csrf.exempt
 @app.route("/add_teacher/",methods=["GET","POST"])
 def add_teacher():
     teacher_form = TeacherForm()

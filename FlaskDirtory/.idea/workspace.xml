@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01c84558-1b0a-4719-b560-fe10847f76e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/FlaskDirtory/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskDirtory/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f94c6e30-ddd1-40f0-864c-8e5e41fa0382.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskDirtory/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskDirtory/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskDirtory/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskDirtory/views.py" afterDir="false" />
     </list>
@@ -47,11 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FlaskDirtory/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+            <state relative-caret-position="352">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -62,7 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FlaskDirtory/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
+            <state relative-caret-position="220">
               <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#16#54#0" expanded="true" />
@@ -74,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FlaskDirtory/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="128" column="27" selection-start-line="128" selection-start-column="27" selection-end-line="128" selection-end-column="27" />
+            <state relative-caret-position="3344">
+              <caret line="163" column="18" selection-start-line="163" selection-start-column="18" selection-end-line="163" selection-end-column="18" />
               <folding>
                 <element signature="e#16#30#0" expanded="true" />
               </folding>
@@ -86,20 +87,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FlaskDirtory/templates/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="376">
+              <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FlaskDirtory/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+            <state relative-caret-position="82">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -161,9 +159,9 @@
         <option value="$PROJECT_DIR$/FlaskDirtory/forms.py" />
         <option value="$PROJECT_DIR$/FlaskDirtory/config.py" />
         <option value="$PROJECT_DIR$/FlaskDirtory/models.py" />
-        <option value="$PROJECT_DIR$/FlaskDirtory/templates/register.html" />
-        <option value="$PROJECT_DIR$/FlaskDirtory/views.py" />
         <option value="$PROJECT_DIR$/FlaskDirtory/main.py" />
+        <option value="$PROJECT_DIR$/FlaskDirtory/views.py" />
+        <option value="$PROJECT_DIR$/FlaskDirtory/templates/register.html" />
       </list>
     </option>
   </component>
@@ -203,7 +201,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../flask_blueprint_example" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -359,19 +357,20 @@
       <workItem from="1565180824881" duration="2324000" />
       <workItem from="1565224124737" duration="11002000" />
       <workItem from="1565242976056" duration="12564000" />
+      <workItem from="1565262906953" duration="731000" />
+      <workItem from="1565311907909" duration="432000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40441000" />
+    <option name="totallyTimeSpent" value="41604000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.5025126" side_tool="true" weight="0.26096824" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49748743" visible="true" weight="0.2677761" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49748743" visible="true" weight="0.2753404" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32569557" />
@@ -422,7 +421,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FlaskDirtory$FlaskDirtory.coverage" NAME="FlaskDirtory Coverage Results" MODIFIED="1565149230055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/FlaskDirtory$c.coverage" NAME="c Coverage Results" MODIFIED="1565158984498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../importProject" />
-    <SUITE FILE_PATH="coverage/FlaskDirtory$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1565256971693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDirtory" />
+    <SUITE FILE_PATH="coverage/FlaskDirtory$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1565262935212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDirtory" />
     <SUITE FILE_PATH="coverage/FlaskDirtory$b.coverage" NAME="b Coverage Results" MODIFIED="1565158911105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../importProject/dirs" />
     <SUITE FILE_PATH="coverage/FlaskDirtory$a.coverage" NAME="a Coverage Results" MODIFIED="1565158592894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../importProject/dirs" />
     <SUITE FILE_PATH="coverage/FlaskDirtory$manage.coverage" NAME="manage Coverage Results" MODIFIED="1565149610058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -455,24 +454,8 @@
       </provider>
     </entry>
     <entry file="das://b1eae475-b0f1-486d-a18b-9f9eaf7c66cd/schema/main/table/user" />
-    <entry file="das://f94c6e30-ddd1-40f0-864c-8e5e41fa0382/schema/main/table/sqlite_master">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f94c6e30-ddd1-40f0-864c-8e5e41fa0382/schema/main/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://f94c6e30-ddd1-40f0-864c-8e5e41fa0382/schema/main/table/sqlite_master" />
+    <entry file="das://f94c6e30-ddd1-40f0-864c-8e5e41fa0382/schema/main/table/user" />
     <entry file="file://$PROJECT_DIR$/FlaskDirtory/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -535,15 +518,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://f94c6e30-ddd1-40f0-864c-8e5e41fa0382/schema/main/table/course">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://f94c6e30-ddd1-40f0-864c-8e5e41fa0382/schema/main/table/course" />
     <entry file="file://D:/Anaconda3/envs/FlaskPath/Lib/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -555,16 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="18" column="34" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FlaskDirtory/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#16#54#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -610,17 +575,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FlaskDirtory/models.py">
+    <entry file="file://$PROJECT_DIR$/FlaskDirtory/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        <state relative-caret-position="352">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlaskDirtory/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#16#54#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FlaskDirtory/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="128" column="27" selection-start-line="128" selection-start-column="27" selection-end-line="128" selection-end-column="27" />
+        <state relative-caret-position="3344">
+          <caret line="163" column="18" selection-start-line="163" selection-start-column="18" selection-end-line="163" selection-end-column="18" />
           <folding>
             <element signature="e#16#30#0" expanded="true" />
           </folding>
@@ -629,21 +607,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FlaskDirtory/templates/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="376">
+          <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FlaskDirtory/main.py">
+    <entry file="file://$PROJECT_DIR$/FlaskDirtory/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="82">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
