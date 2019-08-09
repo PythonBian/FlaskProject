@@ -12,5 +12,6 @@ app.register_blueprint(simple_blueprint1)
 app.register_blueprint(simple_blueprint2)
 
 manage = Manager(app)
+
 if __name__ == "__main__":
     manage.run()
