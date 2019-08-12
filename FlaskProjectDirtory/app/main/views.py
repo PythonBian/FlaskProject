@@ -8,6 +8,7 @@ from flask import jsonify
 from flask import redirect
 from flask import session
 from flask import render_template
+from flask import make_response #将render_template方法封装成一个响应对象
 
 from . import main
 from app import csrf
@@ -58,8 +59,12 @@ def login():
         username = form_data.get("username")
         password = form_data.get("password")
 
+        #获取用户信息
         user = User.query.filter_by(username = username).first()
-        print(user)
+        #检查是老师还是学生
+        identity = user.identity
+        #检查身份资料是否完善
+        identity_id = user.identity_id
         if user:
             send_password = setPassword(password)
             db_password = user.password
@@ -69,6 +74,13 @@ def login():
                 #设置cookie
                 response.set_cookie("username",username)
                 response.set_cookie("user_id",str(user.id))
+                #用户是老师还是学员
+                response.set_cookie("identity", str(identity) )
+                #用cookie判断是否完善了身份
+                if identity_id:
+                    response.set_cookie("identity_id", str(identity_id))
+                else:
+                    response.set_cookie("identity_id", "")
                 #设置session
                 session["username"] = username
                 #返回跳转
@@ -77,11 +89,38 @@ def login():
 
 @main.route("/index/",methods=["GET","POST"])
 @loginValid
-@cache.cached(timeout=50)
+# @cache.cached(timeout=50)
 def index():
-    students = Students.query.all()
-    response = render_template("students_list.html", **locals())
-    return response
+    teacher_id = request.cookies.get("identity_id")
+    if teacher_id:
+        teachers = Teachers.query.get(int(teacher_id))
+    else:
+        teachers = {}
+    if request.method == "POST":
+        username = request.form.get("username")
+        age = request.form.get("age")
+        gender = request.form.get("gender")
+        course = request.form.get("course")
+        if request.cookies.get("identity") == "0":
+            students = Students()
+        else:
+            #保存教师的详细信息
+            teachers = Teachers()
+            teachers.name = username
+            teachers.age = age
+            teachers.gender = gender
+            teachers.course_id = int(course)
+            teachers.save()
+            #更新用户和教师关联
+            user = User.query.get(int(request.cookies.get("user_id")))
+            user.identity_id = teachers.id
+            user.save()
+            #将用户的详情信息的状态修改掉
+            response = make_response(render_template("index.html", **locals()))
+            print(type(response))
+            response.set_cookie("identity_id", str(teachers.id))
+            return response
+    return render_template("index.html", **locals())
 
 @main.route("/logout/",methods=["GET","POST"])
 def logout():
