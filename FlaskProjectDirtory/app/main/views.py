@@ -11,6 +11,7 @@ from flask import render_template
 
 from . import main
 from app import csrf
+from app import cache
 from app.models import *
 from .forms import TeacherForm
 
@@ -48,14 +49,17 @@ def register():
     return render_template("register.html", **locals())
 
 
+
 @main.route("/login/",methods=["GET","POST"])
 def login():
     if request.method == "POST":
+        print("this is post")
         form_data = request.form
         username = form_data.get("username")
         password = form_data.get("password")
 
         user = User.query.filter_by(username = username).first()
+        print(user)
         if user:
             send_password = setPassword(password)
             db_password = user.password
@@ -73,10 +77,10 @@ def login():
 
 @main.route("/index/",methods=["GET","POST"])
 @loginValid
+@cache.cached(timeout=50)
 def index():
     students = Students.query.all()
     response = render_template("students_list.html", **locals())
-    #response.set_cookie("")
     return response
 
 @main.route("/logout/",methods=["GET","POST"])
@@ -86,7 +90,6 @@ def logout():
         response.delete_cookie(key)
     del session["username"]
     return response
-
 
 @main.route("/student_list/<int:id>/",methods=["GET","POST"])
 def student_list(id):
@@ -119,7 +122,6 @@ def csrf_token_error(reason):
     print(reason) #错误信息 #The CSRF token is missing.
     return render_template("csrf_403.html",**locals())
 
-
 @main.route("/userValid/",methods=["GET","POST"])
 def UserValid():
     result = {
@@ -140,6 +142,25 @@ def UserValid():
         result["code"] = 400
         result["data"] = "请求方式错误"
     return jsonify(result)
+
+@main.route("/clearCache/")
+def clearCache():
+    cache.clear()
+    return "cache is clear"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

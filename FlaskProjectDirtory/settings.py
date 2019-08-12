@@ -5,7 +5,7 @@ class BaseConfig(object):
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
     SQLALCHEMY_TRACK_MODIFICATIONS = True
     SECRET_KEY = "bjh123" #用来生成session_id和之后csrf_token,
-
+    CACHE_TYPE = "simple"
 
 class DebugConfig(BaseConfig):
     DEBUG = True

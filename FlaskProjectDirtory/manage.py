@@ -17,6 +17,4 @@ def runserver_gevent():
     server.serve_forever()
 
 if __name__ == '__main__':
-
     manager.run()
-
