@@ -16,8 +16,10 @@ from app import cache
 from app.models import *
 from .forms import TeacherForm
 
+import functools
 
 def loginValid(fun):
+    @functools.wraps(fun)
     def inner(*args,**kwargs):
         username = request.cookies.get("username")
         id = request.cookies.get("user_id")
@@ -131,14 +133,17 @@ def logout():
     return response
 
 @main.route("/student_list/<int:id>/",methods=["GET","POST"])
+@loginValid
 def student_list(id):
     students = Students.query.all()
     response = render_template("students_list.html", **locals())
     #response.set_cookie("")
     return response
 
+
 @csrf.exempt
 @main.route("/add_teacher/",methods=["GET","POST"])
+@loginValid
 def add_teacher():
     teacher_form = TeacherForm()
     if request.method == "POST":
